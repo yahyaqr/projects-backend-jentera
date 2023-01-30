@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-prod": "NODE_ENV=production node ./src/server.js",
     "start": "nodemon ./src/server.js",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "migrate": "node-pg-migrate"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "joi": "^17.7.0",
     "nanoid": "^3.3.4",
     "node-fetch": "^3.2.6",
+    "node-pg-migrate": "^6.2.2",
     "pg": "^8.9.0"
   },
   "devDependencies": {
