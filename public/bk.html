@@ -1,0 +1,70 @@
+<div class="mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+  <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+    <div class="p-6 bg-white border-b border-gray-200">
+      <h1 class="text-xl font-bold mb-4">Turn on/off Data Monitoring Card</h1>
+      <form class="mb-8">
+        <label class="block mb-2" for="deviceIdMonitoring">Device ID:</label>
+        <select
+          class="w-full px-4 py-2 border rounded"
+          id="deviceIdMonitoring"
+          name="deviceIdMonitoring"
+          required
+        >
+          <option value="device1">Device 1</option>
+          <option value="device2">Device 2</option>
+          <option value="device3">Device 3</option></select
+        ><br /><br />
+        <label class="block mb-2" for="modeMonitoring">Mode:</label>
+        <select
+          class="w-full px-4 py-2 border rounded"
+          id="modeMonitoring"
+          name="modeMonitoring"
+          required
+        >
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option></select
+        ><br /><br />
+        <input
+          class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+<div class="mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+  <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+    <div class="p-6 bg-white border-b border-gray-200">
+      <h1 class="text-2xl font-bold mb-4">Turn on/off Sensor Device Card</h1>
+      <form>
+        <label for="deviceIdSensor" class="block mb-2">Device ID:</label>
+        <select
+          id="deviceIdSensor"
+          name="deviceIdSensor"
+          required
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="device1">Device 1</option>
+          <option value="device2">Device 2</option>
+          <option value="device3">Device 3</option></select
+        ><br /><br />
+        <label for="modeSensor" class="block mb-2">Mode:</label>
+        <select
+          id="modeSensor"
+          name="modeSensor"
+          required
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option></select
+        ><br /><br />
+        <input
+          type="submit"
+          value="Submit"
+          class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 cursor-pointer"
+        />
+      </form>
+    </div>
+  </div>
+</div>
