@@ -1,5 +1,5 @@
 const { Pool } = require('pg');
-const { mapDBToModel } = require('../../utils');
+const { mapRPMDBToModel } = require('../../utils/mapRPMDBToModel');
 const InvariantError = require('../../exceptions/InvariantError');
 const NotFoundError = require('../../exceptions/NotFoundError');
 
@@ -27,7 +27,7 @@ class RPMService {
 
   async getRPM() {
     const result = await this._pool.query('SELECT * FROM rpm');
-    return result.rows.map(mapDBToModel);
+    return result.rows.map(mapRPMDBToModel);
   }
 
   async getRPMByDeviceId(deviceId) {
@@ -41,7 +41,7 @@ class RPMService {
       throw new NotFoundError('RPM tidak ditemukan');
     }
 
-    return result.rows.map(mapDBToModel);
+    return result.rows.map(mapRPMDBToModel);
   }
 
   // async editRPMById(id, { rpm }) {
